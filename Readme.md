@@ -25,7 +25,13 @@ git subtree add --prefix <local folder> <remote-subtree> master --squash
 # 1
 git remote add -f learn_pandas_petrou https://github.com/tdpetrou/Learn-Pandas
 git remote add -f learn_pandas_hrojas https://bitbucket.org/hrojas/learn-pandas.git
-git subtree add --prefix <local folder> <remote-subtree> master --squash
+git remote add -f pandas_exercises https://github.com/guipsamora/pandas_exercises # forked repository: https://github.com/JonathanLoscalzo/pandas_exercises.git
+
+git subtree add --prefix=learn_pandas_hrojas learn_pandas_hrojas/master --squash
+
+git subtree add --prefix=pandas_exercises pandas_exercises/master --squash
+
+
 
 
 ```
